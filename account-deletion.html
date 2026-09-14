@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>느탐대 - 계정 삭제 안내</title>
+<style>
+  :root {
+    --purple: #6a3ad3;
+    --purple-dark: #4b2a94;
+    --bg: #faf9fd;
+    --text: #2b2440;
+    --muted: #6b6480;
+    --border: #e6e2f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 36px 20px 80px;
+  }
+  section {
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 19px;
+    color: var(--purple-dark);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+  }
+  .steps {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .steps li {
+    margin-bottom: 10px;
+  }
+  .email-box {
+    display: inline-block;
+    background: #f2eefb;
+    color: var(--purple-dark);
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin: 8px 0;
+    word-break: break-all;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--muted);
+    font-weight: 600;
+    width: 38%;
+  }
+  .muted {
+    color: var(--muted);
+    font-size: 13.5px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 24px 20px 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>느탐대 계정 삭제 안내</h1>
+  <p>개발자: 느탐대(neutamdae)</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>계정 삭제 요청 방법</h2>
+    <div class="card">
+      <p>아래 이메일로 계정 삭제를 요청하시면 확인 후 처리해 드립니다.</p>
+      <div class="email-box">neutamdae.ongi@gmail.com</div>
+      <p class="muted">앱을 삭제했거나 더 이상 접근할 수 없는 경우에도 이 이메일로 요청하실 수 있습니다.</p>
+      <ol class="steps">
+        <li>위 이메일로 <strong>"계정 삭제 요청"</strong>이라는 제목의 메일을 보내주세요.</li>
+        <li>본문에 <strong>가입 시 사용한 이메일 주소</strong>와 <strong>닉네임</strong>을 함께 적어주세요.</li>
+        <li>본인 확인 후 <strong>영업일 기준 7일 이내</strong>에 계정과 관련 데이터를 삭제하고, 완료되면 회신드립니다.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>삭제되는 데이터</h2>
+    <div class="card">
+      <table>
+        <tr>
+          <th>계정 정보</th>
+          <td>이메일 주소, 비밀번호(암호화 저장), 닉네임, 로그인 인증 토큰</td>
+        </tr>
+        <tr>
+          <th>위치정보</th>
+          <td>느탐대는 위치정보를 서버로 전송하지 않습니다. 미션 도착 확인은 기기 안에서만 계산되며, 앱을 삭제하면 함께 사라집니다.</td>
+        </tr>
+        <tr>
+          <th>카메라로 촬영한 사진</th>
+          <td>사진 미션에서 촬영한 사진은 서버에 저장되지 않고 화면 확인 용도로만 사용됩니다.</td>
+        </tr>
+        <tr>
+          <th>탐험 진행 기록</th>
+          <td>기기에만 저장되며, 계정 삭제와 별개로 앱을 삭제하거나 앱 데이터를 지우면 함께 삭제됩니다.</td>
+        </tr>
+      </table>
+      <p class="muted" style="margin-top:14px;">
+        계정 삭제 요청이 처리되면 서버에 저장된 계정 정보는 즉시 삭제되며, 백업 시스템에는 최대 30일간 보관된 뒤 완전히 삭제됩니다.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>문의</h2>
+    <div class="card">
+      계정 삭제 관련 문의는 <span class="email-box">neutamdae.ongi@gmail.com</span> 로 연락해 주세요.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  최종 수정일: 2026-09-14
+</footer>
+
+</body>
+</html>
